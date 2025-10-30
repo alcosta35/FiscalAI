@@ -18,11 +18,10 @@ from agente_cfop import AgenteValidadorCFOP
 # ============================================================================
 
 app = FastAPI(
-    title=settings.APP_NAME,
-    version=settings.APP_VERSION,
+    title=settings.app_name,        
+    version=settings.app_version,  
     description="Sistema inteligente de auditoria e validação de CFOP"
 )
-
 # CORS
 app.add_middleware(
     CORSMiddleware,
