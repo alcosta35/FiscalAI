@@ -26,6 +26,10 @@ class Settings(BaseSettings):
     # OpenAI API
     openai_api_key: str = ""
     openai_model: str = "gpt-4"
+
+    # CORS settings
+    cors_origins: list = ["*"]  # Allow all origins, or specify: ["https://example.com"]
+    
     
     # CSV file paths
     cabecalho_csv: str = str(DATA_DIR / "202401_NFs_Cabecalho.csv")
