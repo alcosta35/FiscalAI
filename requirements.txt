@@ -1,24 +1,13 @@
-# Core FastAPI
-fastapi>=0.104.0
-uvicorn[standard]>=0.24.0
-
-# Pydantic
-pydantic>=2.5.0
-pydantic-settings>=2.1.0
-
-# Environment
-python-dotenv>=1.0.0
-
-# OpenAI and LangChain
-openai>=1.12.0
-langchain>=0.1.0
-langchain-openai>=0.0.5
-langchain-community>=0.0.20
-
-# Data processing
-pandas>=2.1.0
-openpyxl>=3.1.0
-
-# Colab tools
-pyngrok>=7.0.0
-nest-asyncio>=1.5.0
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+openai
+langchain
+langchain-openai
+langchain-community
+pandas
+openpyxl
+pyngrok
+nest-asyncio
