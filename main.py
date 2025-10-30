@@ -93,9 +93,9 @@ async def inicializar_sistema():
 # INCLUIR ROTAS
 # ============================================================================
 
-app.include_router(chat_router, prefix=settings.API_PREFIX)
-app.include_router(estatisticas_router, prefix=settings.API_PREFIX)
-app.include_router(validacao_router, prefix=settings.API_PREFIX)
+app.include_router(chat_router, prefix=settings.api_prefix)
+app.include_router(estatisticas_router, prefix=settings.api_prefix)
+app.include_router(validacao_router, prefix=settings.api_prefix)
 
 # ============================================================================
 # EXECUÇÃO LOCAL (DESENVOLVIMENTO)

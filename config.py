@@ -22,7 +22,10 @@ class Settings(BaseSettings):
     # App info
     app_name: str = "FiscalAI - Auditor Fiscal Inteligente"
     app_version: str = "1.0.0"
-    
+
+    # API settings
+    api_prefix: str = ""  # ← ADD THIS LINE (empty string = no prefix, or use "/api/v1")
+        
     # OpenAI API
     openai_api_key: str = ""
     openai_model: str = "gpt-4"
