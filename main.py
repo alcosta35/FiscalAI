@@ -42,8 +42,8 @@ agente = None
 async def root():
     """Rota raiz"""
     return {
-        "mensagem": f"Bem-vindo ao {settings.APP_NAME}",
-        "versao": settings.APP_VERSION,
+        "mensagem": f"Bem-vindo ao {settings.app_name}",
+	"versao": settings.app_version,
         "docs": "/docs"
     }
 
@@ -69,9 +69,9 @@ async def inicializar_sistema():
         print("\n🚀 Inicializando sistema...")
         
         agente = AgenteValidadorCFOP(
-            cabecalho_path=settings.CABECALHO_PATH,
-            itens_path=settings.ITENS_PATH,
-            cfop_path=settings.CFOP_PATH
+	cabecalho_path=settings.cabecalho_csv,
+	itens_path=settings.itens_csv,
+	cfop_path=settings.cfop_csv
         )
         
         return {
@@ -105,8 +105,8 @@ if __name__ == "__main__":
     print(f"""
     ╔══════════════════════════════════════════════════════════════╗
     ║                                                              ║
-    ║          {settings.APP_NAME}           ║
-    ║                     v{settings.APP_VERSION}                          ║
+    ║          {settings.app_name}           ║
+    ║                     v{settings.app_version}                          ║
     ║                                                              ║
     ╚══════════════════════════════════════════════════════════════╝
     """)
